@@ -1,98 +1,104 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+/*BASIC HEADER STYLE*/
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"/>
-    <title>About Me</title>
-    <nav>
-    <label for="homepage"><a href="index.html" id="coverpage">Home</a></label>
-    <a href="description.html">Description</a>
-    <a href="statistics.html">Statistics</a>
-    </nav>
-    <!--give ID to switch view  -->
-
-  </head>
-  <body>
-    <div class="container-fluid">
-      <h1>About Me</h1>
-    </br>
-    <h4>Statistics</h4>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Year</th>
-          <th scope="col">Position</th>
-          <th scope="col">Salary</th>
-          <th scope="col">Change</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <th scope="row">2000</th>
-          <td>Information Clerks</td>
-          <td>30,000</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th scope="row">2001</th>
-          <td>Information Clerks</td>
-          <td>35,000</td>
-          <td>+5,000</td>
-        </tr>
-        <tr>
-          <th scope="row">2002</th>
-          <td>Office Manager</td>
-          <td>40,000</td>
-          <td>+5,000</td>
-        </tr>
-        <tr>
-          <th scope="row">2003</th>
-          <td>General Manager</td>
-          <td>50,000</td>
-          <td>+10,000</td>
-        </tr>
-        <tr>
-          <th scope="row">2004</th>
-          <td>Vice President</td>
-          <td>70,000</td>
-          <td>+20,000</td>
-        </tr>
-      </tbody>
-    </table>
-  </br>
-
-  <h6>Create New Record</h6>
-  <form>
-    <div class="form-group">
-      <label>Year</label>
-      <input type="Date" class="form-control" id="inputstyle"/></div>
-
-    <div class="form-group">
-      <label>Position</label>
-      <input type="string" class="form-control" id="inputstyle"/>
-    </div>
-    <div class="form-group">
-      <label>Salary</label>
-      <input type="Number" id="inputstyle"/>
-    </div>
-    <div class="form-group">
-      <label>Change</label>
-      <input type="Number" id="inputstyle" />
-    </div>
-
-</form>
+    header {
+    background: #495388;
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    font-size: xx-Large;
+    font-weight: Bold;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid Black;
+    }
 
 
+/*BASIC BODY STYLE*/
 
-      </div>
-      </div>
-    </div>
+    body{
+        border: 1px solid black;
+        background-color: #fffdd0;
+    }
 
-  </body>
-</html>
+
+    h1 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h2 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h3 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    font-size: Large;
+    font-weight: Bold;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h4 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+
+/*ENHANCED BODY STYLE */
+
+    nav {
+        background: #ff8080;
+        font-family: "Times New Roman" , "Arial" , Sans-Serif;
+        padding: 10px;
+        border: 1px solid black;
+
+    }
+
+    a{
+        padding: 10px;
+        color: #495388;
+        font-family: "Times New Roman" , "Arial" , Sans-Serif;
+        border: 1px;
+        margin-right: 5px;
+    }
+
+    hover{
+        color: yellow;
+    }
+
+/*FORM STYLE*/
+    form {
+        padding: 20px;
+    }
+
+    input {
+        margin: 3px;
+    }
+
+    #inputstyle {
+        width: 250px;
+        background-color: #ffd9b3;
+    }
+
+    }
+
+    label {
+        padding: 10px;
+    }
+
+    img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    }
+
+    img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
