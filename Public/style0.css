@@ -1,0 +1,104 @@
+/*BASIC HEADER STYLE*/
+
+    header {
+    background: #495388;
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    font-size: xx-Large;
+    font-weight: Bold;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid Black;
+    }
+
+
+/*BASIC BODY STYLE*/
+
+    body{
+        border: 1px solid black;
+        background-color: #fffdd0;
+    }
+
+
+    h1 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h2 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h3 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    font-size: Large;
+    font-weight: Bold;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    h4 {
+    font-family: "Times New Roman" , "Arial" , Sans-Serif;
+    color: #495388;
+    padding: 10px;
+    margin: 5px;
+    }
+
+
+/*ENHANCED BODY STYLE */
+
+    nav {
+        background: #ff8080;
+        font-family: "Times New Roman" , "Arial" , Sans-Serif;
+        padding: 10px;
+        border: 1px solid black;
+
+    }
+
+    a{
+        padding: 10px;
+        color: #495388;
+        font-family: "Times New Roman" , "Arial" , Sans-Serif;
+        border: 1px;
+        margin-right: 5px;
+    }
+
+    hover{
+        color: yellow;
+    }
+
+/*FORM STYLE*/
+    form {
+        padding: 20px;
+    }
+
+    input {
+        margin: 3px;
+    }
+
+    #inputstyle {
+        width: 250px;
+        background-color: #ffd9b3;
+    }
+
+    }
+
+    label {
+        padding: 10px;
+    }
+
+    img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px; 
+    }
+
+    img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
