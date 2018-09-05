@@ -21,7 +21,7 @@
     <div class="container-fluid">
       <h1>About Me</h1>
     <h4>Statistics</h4>
-    <table class="table table-striped table-sm">
+    <table id="taskTable" class="table table-striped table-sm">
       <thead>
         <tr>
           <th scope="col">Year</th>
@@ -78,11 +78,11 @@
     </div>
     <div class="form-group">
       <label>Salary</label>
-      <input type="Number" id="inputstyle"/>
+      <input type="Number" class="form-control" id="inputstyle"/>
     </div>
     <div class="form-group">
       <label>Change</label>
-      <input type="Number" id="inputstyle" />
+      <input type="Number"class="form-control" id="inputstyle" />
     </div>
 
 </form>
@@ -93,5 +93,10 @@
       </div>
     </div>
 
+      <script src="js/tablesort.min.js"></script>
+      <script>
+        //Table plug-in from: https://github.com/tristen/tablesort//
+        new Tablesort(document.getElementById('taskTable'));
+      </script>
   </body>
 </html>
