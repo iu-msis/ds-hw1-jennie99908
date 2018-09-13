@@ -57,14 +57,14 @@ var nameApp = new Vue({
 
     computed: {
       current_age: function() {
-        return moment(this.dob.date).diff(moment(), 'years');
+        return moment().diff(moment(this.person.dob.date), 'years');
       }
     },
 
     methods: {
-      pretty_date: function(y)
+      pretty_date: function(d)
       {
-        return moment(y).format('l');
+        return moment(d).format('l');
       },
 
       log (msg) {
@@ -84,6 +84,9 @@ var nameApp = new Vue({
            console.log('RESULT FETCH ERROR:');
            console.log(err);
          })
+       },
+       refresh: function (){
+         window.location.reload();;
        }
      },
      created (){
