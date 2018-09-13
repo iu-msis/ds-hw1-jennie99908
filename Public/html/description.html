@@ -20,6 +20,13 @@
   <body>
     <div class="container-fluid">
       <h1>About Me</h1>
+<div class="col">
+
+  <a href="{{person.picture.thumbnail}}">
+    <!-- CoverPicture:https://www.eurodiaconia.org/es/2016/02/welcome-to-the-two-new-members-of-our-family/-->
+    <img v-bind:src="{{person.name.first }}" alt="ProfilePicture"/>
+  </a>
+</div>
 
     <table id="nameTable" class="table table-striped table-sm table-hover">
               <thead >
