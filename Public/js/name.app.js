@@ -86,10 +86,10 @@ var nameApp = new Vue({
          })
        },
        refresh: function (){
-         window.location.reload();;
-       },
-
-     },
+         window.location.reload();
+       }
+    },
+     
      created (){
          this.fetch_results();
      }
