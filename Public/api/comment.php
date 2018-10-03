@@ -7,11 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   exit;
 }
 
-$Id = intval($_GET['id'] ?? 0);
+//$Id = intval($_GET['id'] ?? 0);
 
-if ($Id < 1) {
-  throw new Exception('Invalid ID');
-}
+//if ($Id < 1) {
+  //throw new Exception('Invalid ID');
+//}
 
 
 // 1. Go to the database and get all work associated with the $taskId
