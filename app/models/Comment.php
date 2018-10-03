@@ -1,6 +1,6 @@
 <?php
 
-class Work
+class Comment
 {
   public $id;
   public $comment;
