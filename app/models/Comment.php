@@ -18,7 +18,7 @@ class Comment
             VALUES (?,?)';
 
     $statement = $db->prepare($sql);
-    $success = $statement->execute([$this->id,
+    $success = $statement->execute([
       $this->comment
     ]);
 
