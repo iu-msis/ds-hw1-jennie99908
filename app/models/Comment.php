@@ -25,18 +25,18 @@ class Comment
     $this->id = $db->lastInsertId();
   }
 
-  public static function getCommentById(int $Id) {
+  public static function getCommentById() {
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
 
     // 2. Prepare the query
-    $sql = 'SELECT * FROM Comment WHERE id = ?';
+    $sql = 'SELECT * FROM Comment';
 
     $statement = $db->prepare($sql);
 
     // 3. Run the query
     $success = $statement->execute(
-        [$Id]
+
     );
 
     // 4. Handle the results
