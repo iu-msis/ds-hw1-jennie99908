@@ -7,7 +7,7 @@ var commentsApp = new Vue({
     },
 
     commentForm: { },   // populated by this.getEmptyWorkForm()
-    comment: [ ]
+    comment: []
   },
 
   methods: {
