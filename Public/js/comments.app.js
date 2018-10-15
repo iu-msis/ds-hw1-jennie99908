@@ -1,7 +1,7 @@
 var commentsApp = new Vue({
   el: '#commentMain',
   data: {
-    task: {
+    comment: {
       id: 0,
       comment: 'foo',
     },
@@ -43,7 +43,9 @@ var commentsApp = new Vue({
 
     // Do data fetch
     const url = new URL(window.location.href);
-
+    const id = url.searchParams.get('id');
+    console.log('Comment: '+ id);
+    this.comment.id = id;
 
     if (!id) {
       //TODO: Error? 404?
