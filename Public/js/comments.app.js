@@ -7,7 +7,7 @@ var commentsApp = new Vue({
     },
 
     commentForm: { },   // populated by this.getEmptyWorkForm()
-    comment: []
+    commentList: []
   },
 
   methods: {
@@ -35,7 +35,7 @@ var commentsApp = new Vue({
 
     getEmptyCommentForm() {
       return {
-        comment: NULL
+        "comment": this.comment.comment
       }
     },
 
@@ -47,7 +47,7 @@ var commentsApp = new Vue({
     // fetch('api/task?id=4')
     fetch('api/comment.php')
     .then( response => response.json() )
-    .then( json => {commentsApp.comment = json} )
+    .then( json => {commentsApp.commentList = json} )
     .catch( err => {
       console.error('COMMENT FETCH ERROR:');
       console.error(err);
