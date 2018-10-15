@@ -3,7 +3,7 @@ var commentsApp = new Vue({
   data: {
     comment: {
       id: 0,
-      comment: 'foo',
+      comment: '',
     },
 
     commentForm: { },   // populated by this.getEmptyWorkForm()
@@ -40,18 +40,6 @@ var commentsApp = new Vue({
     },
 
   created () {
-
-    // Do data fetch
-    const url = new URL(window.location.href);
-    const id = url.searchParams.get('id');
-    console.log('Comment: '+ id);
-    this.comment.id = id;
-
-    if (!id) {
-      //TODO: Error? 404?
-      //e.g., window.location = '404.html';
-    }
-
     // Populate workForm with default values
     this.commentForm = this.getEmptyCommentForm();
 
