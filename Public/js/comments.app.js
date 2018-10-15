@@ -39,8 +39,8 @@ var commentsApp = new Vue({
       return {
         comment: null //this.commentdata.comment
       }
-    },
-
+    }
+  },
   created () {
     // Populate workForm with default values
     this.commentForm = this.getEmptyCommentForm();
@@ -55,5 +55,5 @@ var commentsApp = new Vue({
       console.error(err);
     })
   }
-}
+
 })
