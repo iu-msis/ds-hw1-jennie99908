@@ -13,9 +13,6 @@ var commentsApp = new Vue({
   methods: {
     handleCommentForm(e) {
 
-      const s = JSON.stringify(this.commentForm);
-
-      console.log(s);
 
       // POST to remote server
       fetch('api/comment.php', {
