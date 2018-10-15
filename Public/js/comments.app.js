@@ -16,7 +16,7 @@ var commentsApp = new Vue({
       const s = JSON.stringify(this.commentForm);
 
             console.log(s);
-            
+
       fetch('api/comment.php', {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         headers: {
@@ -35,7 +35,7 @@ var commentsApp = new Vue({
       this.commentForm = this.getEmptyCommentForm();
     },
 
-    getEmptyCommentForm : function(e) {
+    getEmptyCommentForm () {
       return {
         comment: null //this.commentdata.comment
       }
