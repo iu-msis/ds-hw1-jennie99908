@@ -37,7 +37,7 @@ var commentsApp = new Vue({
 
     getEmptyWorkForm() {
       return {
-        comment: NULL
+        NULL
       }
     },
 
