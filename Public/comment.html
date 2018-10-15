@@ -39,9 +39,10 @@
                 <h3>Add comment</h3>
 
                 <form @submit.prevent="handleCommentForm">
-                    <label for="cId" class="col-sm-6 col-form-label">Comment: </label>
-                      <textarea></textarea>
-
+                  <div class="form-group row">
+                    <label for="cId" class="col-sm-1 col-form-label">Comment: </label>
+                      <textarea width="40px" height="25px"></textarea>
+                  </div>
 
                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
                   <button type="submit" class="btn btn-primary">Add New Comment</button>
