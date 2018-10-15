@@ -40,7 +40,7 @@
 
                 <form @submit.prevent="handleCommentForm" id="newCommentForm">
                   <div class="form-group row">
-                      <textarea rows="10" cols="45" id="comment"></textarea>
+                      <textarea rows="10" cols="45" id="comment" v-model="commentForm.comment"></textarea>
                   </div>
 
                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
