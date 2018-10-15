@@ -1,4 +1,4 @@
-var tasksApp = new Vue({
+var commentsApp = new Vue({
   el: '#commentMain',
   data: {
     task: {
